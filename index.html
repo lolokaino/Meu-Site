@@ -7,12 +7,17 @@
     <title>Chat em Tempo Real</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Chat em Tempo Real</h1>
-        <div id="chat-box"></div>
-        <input type="text" id="message-input" placeholder="Digite sua mensagem..." />
-        <button id="send-button">Enviar</button>
+    <div class="welcome-container">
+        <img src="download" alt="Imagem de Boas-Vindas" class="welcome-image">
+        <h1>!! Sejam Bem-Vindos !!</h1>
+        <p>Registre-se ou Faça Log-in</p>
+        <div class="login-register">
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="Usuário" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
     </div>
-    <script src="/static/script.js"></script>
 </body>
 </html>
