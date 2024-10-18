@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat ao Vivo</title>
     <link rel="stylesheet" href="/static/styles.css">
-    <title>Chat em Tempo Real</title>
 </head>
 <body>
-    <div class="welcome-container">
-        <img src="download" alt="Imagem de Boas-Vindas" class="welcome-image">
-        <h1>!! Sejam Bem-Vindos !!</h1>
-        <p>Registre-se ou Faça Log-in</p>
-        <div class="login-register">
-            <form action="/login" method="POST">
-                <input type="text" name="username" placeholder="Usuário" required>
-                <input type="password" name="password" placeholder="Senha" required>
-                <button type="submit">Entrar</button>
-            </form>
-        </div>
+    <div id="login-container">
+        <input type="text" id="nickname-input" placeholder="Escolha um nickname">
+        <button id="start-chat">Entrar no chat</button>
     </div>
+    <div id="chat-interface" style="display: none;">
+        <ul id="messages"></ul>
+        <form id="form">
+            <input type="text" id="message-input" placeholder="Digite sua mensagem">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>

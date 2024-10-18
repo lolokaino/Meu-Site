@@ -1,42 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2e2e2e;
-    color: #ffffff;
+    background-image: url('/static/download.jfif'); /* Adicionando a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+#chat-interface {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.8); /* Fundo semi-transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    background-color: rgba(30, 30, 30, 0.8); /* Fundo semi-transparente */
+    border-radius: 10px; /* Bordas arredondadas */
 }
 
-.welcome-container {
-    text-align: center;
-    background-color: #3b3b3b;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #444;
-}
-
-.welcome-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #444;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #5c5c5c;
-    color: #ffffff;
-    cursor: pointer;
-}
+/* Resto do CSS... */
