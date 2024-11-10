@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat ao Vivo</title>
-    <link rel="stylesheet" href="/static/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servidor Minecraft</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="login-container">
-        <input type="text" id="nickname-input" placeholder="Escolha um nickname">
-        <button id="start-chat">Entrar no chat</button>
-    </div>
-    <div id="chat-interface" style="display: none;">
-        <ul id="messages"></ul>
-        <form id="form">
-            <input type="text" id="message-input" placeholder="Digite sua mensagem">
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
-    <script src="/static/script.js"></script>
+  <h1>Bem-vindo ao nosso servidor Minecraft!</h1>
+
+  <div>
+    <h2>Informações do Servidor</h2>
+    <ul>
+      <li>Endereço IP: (Coloque o IP do servidor aqui)</li>
+      <li>Porta: (Coloque a porta do servidor aqui)</li>
+      <li>Versão: (Coloque a versão do servidor aqui)</li>
+    </ul>
+  </div>
+
+  <div>
+    <h2>Regras</h2>
+    <ul>
+      <li>Seja respeitoso com os outros jogadores.</li>
+      <li>Não faça spam ou seja ofensivo.</li>
+      <li>Divirta-se!</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
